@@ -81,9 +81,9 @@ function happy() {
     gifcontainer.appendChild(happy1);
     gifcontainer.appendChild(happy2);
 
-    // while (gifcontainer.hasChildNodes()) {
-    //     gifcontainer.removeChild(gifcontainer.firstChild);
-    //   }
+    while (buttons.hasChildNodes()) {
+        buttons.removeChild(buttons.firstChild);
+      }
 }
 
 function remove()
