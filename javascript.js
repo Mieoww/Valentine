@@ -14,6 +14,26 @@ gifcontainer.appendChild(ask1);
 gifcontainer.appendChild(ask2);
 // ============================================================
 
+let buttons = document.getElementsByClassName('buttons')[0];
+
+let yes = document.createElement('button');
+yes.id = 'yesButton';
+yes.innerText = 'YES';
+yes.onclick = happy; 
+yes.className = "btn"; 
+
+
+let no = document.createElement('button');
+no.id = 'noButton';
+no.innerText = 'NO';
+no.addEventListener('mouseover', move); 
+no.onclick = move; 
+no.className = "btn";
+
+
+buttons.appendChild(yes);
+buttons.appendChild(no);
+// ============================================================
 let flag = 0; 
 function move() {
     if(flag ==0)
@@ -60,6 +80,10 @@ function happy() {
     happy2.alt = "Cute animated illustration"; 
     gifcontainer.appendChild(happy1);
     gifcontainer.appendChild(happy2);
+
+    // while (gifcontainer.hasChildNodes()) {
+    //     gifcontainer.removeChild(gifcontainer.firstChild);
+    //   }
 }
 
 function remove()
