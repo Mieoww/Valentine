@@ -53,7 +53,7 @@ function happy() {
     let texthappy = document.createTextNode("HAPPYYY!");
     head.replaceChild(texthappy, headtext); 
     let happy1 = document.createElement("img");
-    happy1.src = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTNvb2Y1a25mZXcxM2sxN3Zic3hoZHNwOWp2YWR5OGIxZ2V5Ynl0aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Q47i2kDz8w1utetr7i/giphy_s.gif"; 
+    happy1.src = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTNvb2Y1a25mZXcxM2sxN3Zic3hoZHNwOWp2YWR5OGIxZ2V5Ynl0aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Q47i2kDz8w1utetr7i/giphy.gif"; 
     happy1.alt = "Cute animated illustration"; 
     let happy2 = document.createElement("img");
     happy2.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3ZkMnBxOHRpNXFodjg2OTZ1MnMzaTl4dTNmYXFvYzl0bm1idHY1bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Yz2NW6XR6EvmU4uWpa/giphy.gif"; 
@@ -64,5 +64,7 @@ function happy() {
 
 function remove()
 {
-    gifcontainer.remove(); 
+    while (gifcontainer.hasChildNodes()) {
+        gifcontainer.removeChild(gifcontainer.firstChild);
+      }
 }
