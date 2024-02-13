@@ -2,7 +2,7 @@ let head = document.getElementsByClassName('header_text')[0];
 let headtext = document.createTextNode("Will you be my valentine?");
 head.appendChild(headtext); 
 // ============================================================
-let gifcontainer = document.getElementsByClassName('gif_container')[0]; 
+let gifcontainer = document.getElementsByClassName('gif')[0]; 
 
 let ask1 = document.createElement("img");
 ask1.src = "https://media3.giphy.com/media/ZCSPaG9pPpSJEBiOUF/giphy.gif"; 
